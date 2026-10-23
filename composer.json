@@ -1,0 +1,46 @@
+{
+    "name": "irodevnet/indexnow",
+    "description": "Automatic IndexNow for PHP sites: tells Bing, Yandex, Seznam, Naver and Yep which pages were added, changed or removed, straight from your sitemap.",
+    "type": "library",
+    "license": "MIT",
+    "keywords": ["indexnow", "seo", "sitemap", "bing", "yandex", "search engine", "crawling"],
+    "homepage": "https://github.com/irodevltd/indexnow-php",
+    "authors": [
+        {
+            "name": "İRODEV LTD",
+            "email": "info@irodev.net",
+            "homepage": "https://irodev.net"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/irodevltd/indexnow-php/issues",
+        "source": "https://github.com/irodevltd/indexnow-php"
+    },
+    "require": {
+        "php": ">=8.1",
+        "ext-json": "*",
+        "ext-simplexml": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.5"
+    },
+    "suggest": {
+        "ext-curl": "Sends the notices (CurlTransport, the default transport)"
+    },
+    "autoload": {
+        "psr-4": {
+            "Irodev\\IndexNow\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Irodev\\IndexNow\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
